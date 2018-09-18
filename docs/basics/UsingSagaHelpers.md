@@ -45,7 +45,7 @@ function* watchFetchData() {
 import { takeLatest } from 'redux-saga'
 
 function* watchFetchData() {
-  yield* takeLatest('FETCH_REQUESTED', fetchData)
+  yield takeLatest('FETCH_REQUESTED', fetchData)
 }
 ```
 
